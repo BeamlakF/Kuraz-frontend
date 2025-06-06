@@ -1,0 +1,134 @@
+body {
+      background: linear-gradient(135deg, #c7cef1, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .task-app {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 2rem 3rem;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .input-group {
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #taskInput {
+      border: none;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+      color: #333;
+      border-radius: 50px 0 0 50px;
+    }
+
+    #taskInput:focus {
+      outline: none;
+      box-shadow: 0 0 10px #875bb3;
+    }
+
+    .btn-primary {
+      background: #764ba2;
+      border: none;
+      font-weight: 600;
+      padding: 0 1.8rem;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .btn-primary:hover {
+      background: #d185da;
+    }
+
+    ul#taskList {
+      margin-top: 2rem;
+      max-height: 300px;
+      overflow-y: auto;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul#taskList li {
+      background: rgba(255, 255, 255, 0.2);
+      margin-bottom: 12px;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    ul#taskList li:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    ul#taskList li.completed {
+      background: #15f048cc !important;
+      text-decoration: line-through;
+      color: #d4f7dc;
+      box-shadow: 0 4px 15px #28a745bb;
+    }
+
+    .form-check-input {
+      width: 20px;
+      height: 20px;
+      margin-right: 1rem;
+      cursor: pointer;
+      accent-color: #764ba2;
+      transition: accent-color 0.3s ease;
+    }
+
+    .form-check-input:hover {
+      accent-color: #ea66cd;
+    }
+
+    .form-check-label {
+      font-size: 1.1rem;
+      flex-grow: 1;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    .btn-danger {
+      background: #f16969;
+      border: none;
+      padding: 0 0.7rem;
+      font-size: 1.3rem;
+      line-height: 1;
+      border-radius: 50%;
+    }
+
+    .btn-danger:hover {
+      background: #c82333;
+    }
+
+    /* Scrollbar styling for task list */
+    ul#taskList::-webkit-scrollbar {
+      width: 6px;
+    }
+    ul#taskList::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ul#taskList::-webkit-scrollbar-thumb {
+      background: #764ba2;
+      border-radius: 10px;
+    }
